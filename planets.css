@@ -1,0 +1,111 @@
+.planet {
+    width: 300px;
+    height:300px;
+    display:inline-block;
+    border-radius: 50%;
+    box-shadow: -20px -20px 50px 2px #000 inset, 0 0 20px 2px #000;
+    animation: spin 3s linear infinite;
+    flex-shrink: 0;
+}
+
+.mercury {
+    background: 
+      url(assets/mercury.jpg)
+      0/auto 100%;
+    translate: -150%;
+    scale: 0.2;
+    animation-duration: 1s;
+    rotate: -25deg;
+}
+
+.venus {
+    background: 
+      url(assets/venus.jpg)
+      0/auto 100%;
+    translate: -180%;
+    scale: 0.25;
+    animation-duration: 2s;
+    rotate: -15deg;
+}
+
+.earth {
+    background: 
+      url(https://i.stack.imgur.com/3SLqF.jpg)
+      0/auto 100%;
+    translate: -200%;
+    scale: 0.35;
+    animation-duration: 3.5s;
+    rotate: -20deg;
+}
+
+.mars {
+    background: 
+      url(assets/mars.jpg)
+      0/auto 100%;
+    translate: -220%;
+    scale: 0.3;
+    animation-duration: 3s;
+    rotate: -18deg;
+}
+
+.jupiter {
+    background: 
+      url(assets/jupiter.jpg)
+      0/auto 100%;
+    translate: -235%;
+    scale: 0.5;
+    animation-duration: 5s;
+}
+
+.saturn {
+  background: 
+    url(assets/saturn.jpg)
+    0/auto 100%;
+  translate: -250%;
+  scale: 0.3;
+  animation-duration: 4.5s;
+  rotate: -18.5deg;
+}
+
+.uranus {
+  background: 
+    url(assets/uranus.jpg)
+    0/auto 100%;
+  translate: -280%;
+  scale: 0.25;
+  animation-duration: 3.5s;
+  rotate: -16.5deg;
+}
+
+.neptune {
+  background: 
+    url(assets/neptune.jpg)
+    0/auto 100%;
+  translate: -320%;
+  scale: 0.22;
+  animation-duration: 2.5s;
+  rotate: -19.5deg;
+}
+
+
+@keyframes spin {
+    to {
+        background-position:200% 0;
+    }
+}
+
+.solar-system {
+
+    display: flex;
+    align-items: center;
+}
+
+.sun {
+    translate: -60%;
+    scale: 1;
+    width: 500px;
+    height: 500px;
+    background: url(assets/sun.png) 0/auto 100%;
+    flex-shrink: 0;
+}
+
